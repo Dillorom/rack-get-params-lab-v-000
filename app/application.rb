@@ -27,10 +27,10 @@ class Application
       if @@items.inlude?(items_to_add)
         @@cart << items_to_add
         resp.write "Added #{items_to_add}"
-      else 
+      else
         resp.write "We don't have that item"
       end
-      
+
     else
       resp.write "Path Not Found"
     end
